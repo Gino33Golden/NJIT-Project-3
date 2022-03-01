@@ -39,7 +39,7 @@ const vue_app = new Vue({
 
             var owner = "Gino";
 
-            var github = "https://gino33golden.github.io/NJIT-Project-3/"
+            var github = "https://gino33golden.github.io/NJIT-Project-3/";
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
