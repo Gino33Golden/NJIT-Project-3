@@ -35,7 +35,7 @@ const vue_app = new Vue({
             movies: []
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            var title= "IMDB + Gino's Top 8 Movies",
+            var title = "IMDB + Gino's Top 8 Movies",
 
             var owner = "Gino",
 
