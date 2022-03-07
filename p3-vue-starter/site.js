@@ -35,7 +35,7 @@ const vue_app = new Vue({
             movies: [],
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            app_title: "IMDB + Gino's Top 8 Movies",
+            title: "IMDB + Gino's Top 8 Movies",
             owner: "Gino",
             github: " https://gino33golden.github.io/NJIT-Project-3/",
       },
@@ -76,31 +76,27 @@ const vue_app = new Vue({
                         var dateFormat = '';
                         dateFormat = dateFormat + month + ' ' + day + ', ' + year;
                         return dateFormat;
-
-
                   },
 
-                  like(index)
-                  {
+                  like(index){
                         this.movies[index].likes += 1;
 
                   },
-                  dislike(index)
-                  {
+
+                  dislike(index){
                         this.movies[index].dislikes -= 1;
 
                   },
 
-                  posterClick(index)
-                  {
+                  posterClick(index){
                         if ( this.movies[index].posterindex < (this.movies[index].posters.length - 1)  ) {
                               this.movies[index].posterindex += 1;
                         } else {
                               this.movies[index].posterindex = 0;
                         }
                   },
-                  timeText(minutes)
-                  {
+
+                  timeText(minutes){
                         var hours = Math.floor(minutes / 60)
                         var realMin = minutes % 60
 
@@ -108,6 +104,5 @@ const vue_app = new Vue({
                         hoursMins = hours + 'h' + ' ' + realMin + 'm';
 
                         return hoursMins;
-
             }
       })
